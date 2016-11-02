@@ -1,0 +1,49 @@
+{
+	"action":[
+		{
+			"action_id": 1,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 1,
+			"resource_type": 1,
+			"resource_path": "测试文件夹"
+		},
+		{
+			"action_id": 2,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 2,
+			"resource_type": 1,
+			"resource_path": "测试文件夹\\文件夹2"
+		},
+		{
+			"action_id": 3,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 3,
+			"resource_type": 0,
+			"resource_path": "测试文件夹\\text.txt"
+		},
+		{
+			"action_id": 3,
+			"action_type": "sleep",
+			"seconds": 10
+		},
+		{
+			"action_id": 4,
+			"action_type": "WFF"
+		}
+	],
+	"result":{
+		"local_resources":[
+			"测试文件夹",
+			"测试文件夹\\文件夹2",
+			"测试文件夹\\text.txt"
+		],
+		"server_resources":[
+			"测试文件夹",
+			"测试文件夹\\文件夹2",
+			"测试文件夹\\text.txt"
+		]
+	}
+}

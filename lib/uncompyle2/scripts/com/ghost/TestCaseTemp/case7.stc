@@ -1,0 +1,86 @@
+{
+	"action":[
+		{
+			"action_id": 1,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 1,
+			"resource_type": 1,
+			"resource_path": "测试文件夹"
+		},
+		{
+			"action_id": 2,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 2,
+			"resource_type": 1,
+			"resource_path": "测试文件夹\\文件夹2"
+		},
+		{
+			"action_id": 3,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 4,
+			"resource_type": 1,
+			"resource_path": "测试文件夹\\文件夹3"
+		},
+		{
+			"action_id": 4,
+			"action_type": "create",
+			"position": "server",
+			"resource_id": 3,
+			"resource_type": 0,
+			"resource_path": "测试文件夹\\test.txt"
+		},
+		{
+			"action_id": 5,
+			"action_type": "sleep",
+			"seconds": 10
+		},
+		{
+			"action_id": 6,
+			"action_type": "WFF"
+		},
+		{
+			"action_id": 7,
+			"action_type": "move",
+			"position": "server",
+			"resource_id": 3,
+			"resource_type": 0,
+			"resource_path": "测试文件夹\\test.txt",
+			"target_resource_path": "测试文件夹\\文件夹2\\test123.txt"
+		},
+		{
+			"action_id": 8,
+			"action_type": "move",
+			"position": "server",
+			"resource_id": 4,
+			"resource_type": 1,
+			"resource_path": "测试文件夹\\文件夹3",
+			"target_resource_path": "测试文件夹\\文件夹2\\文件夹移动"
+		},
+		{
+			"action_id": 9,
+			"action_type": "sleep",
+			"seconds": 10
+		},
+		{
+			"action_id": 10,
+			"action_type": "WFF"
+		}
+	],
+	"result":{
+		"local_resources":[
+			"测试文件夹",
+			"测试文件夹\\文件夹2",
+			"测试文件夹\\文件夹2\\test123.txt",
+			"测试文件夹\\文件夹2\\文件夹移动"
+		],
+		"server_resources":[
+			"测试文件夹",
+			"测试文件夹\\文件夹2",
+			"测试文件夹\\文件夹2\\test123.txt",
+			"测试文件夹\\文件夹2\\文件夹移动"
+		]
+	}
+}

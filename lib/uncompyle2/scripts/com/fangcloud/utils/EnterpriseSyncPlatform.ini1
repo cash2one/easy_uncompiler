@@ -1,0 +1,8 @@
+[AppInfo]
+appversion = 0.0.20700
+appname = 企业云盘
+loginurl = /client/auth/sync_skydrive_login
+appupdateurl = https://app.fangcloud.com/sync_mac/enterprise
+appdownloadurl = https://app.fangcloud.com/sync_mac/EnterpriseSync.pkg
+md5ofmacappzip = 1a37c86becbd1f74b8d556cc99dc1fec
+
